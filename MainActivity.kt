@@ -1,5 +1,4 @@
 package com.antonino.memorygame
-
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
@@ -57,7 +56,7 @@ class MainActivity : AppCompatActivity() {
             }
             button.setImageResource(
                 if (card.isFaceUp) card.identifier
-                else R.drawable.ic_code // immagine di default (retro)
+                else R.drawable.baseline_fingerprint_24 // immagine card di default
             )
         }
     }
@@ -66,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         val card = cards[position]
 
         if (card.isFaceUp) {
-            Toast.makeText(this, "Invalid move!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "mossa non valida", Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -91,7 +90,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkForMatch(position1: Int, position2: Int) {
         if (cards[position1].identifier == cards[position2].identifier) {
-            Toast.makeText(this, "Match found!!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Coppia Trovata", Toast.LENGTH_SHORT).show()
             cards[position1].isMatched = true
             cards[position2].isMatched = true
         }

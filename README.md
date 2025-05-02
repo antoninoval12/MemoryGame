@@ -3,9 +3,9 @@
 Il progetto consiste nello sviluppo di un'app Android per un semplice gioco di memoria. L'obiettivo del gioco è trovare tutte le coppie di carte uguali. L’interfaccia grafica presenta 8 carte disposte su una griglia 2x4. Quando l’utente tocca una carta, questa si gira mostrando un’icona. Se le due carte scoperte coincidono, restano visibili; altrimenti, tornano coperte.
 
 **Sviluppatori**
-- Malinconico Daniel   0334000218
-- Valese Antonino      0334000210
-- Pollastro Emanuele   0334000213
+- Malinconico Daniel 0334000218
+- Valese Antonino 0334000210
+- Pollastro Emanuele 0334000213
 
 
 
@@ -34,7 +34,7 @@ This project consists of developing a simple memory game Android app. The goal o
 
 **Developers**
 * Malinconico Daniel 0334000218
-* Valese Antonino – 0334000210
+* Valese Antonino 0334000210
 * Pollastro Emanuele – 0334000213
 
 **Main Features**

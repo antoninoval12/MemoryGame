@@ -7,12 +7,16 @@ Il progetto consiste nello sviluppo di un'app Android per un semplice gioco di m
 - Valese Antonino 0334000210
 - Pollastro Emanuele 0334000213
 
-  **Funzionalità principali**
+
+
+**Funzionalità principali**
 - Visualizzazione di 8 carte (4 coppie) in una griglia
 - Gestione dello stato delle carte: coperte, scoperte, abbinate
 - Verifica automatica del match tra due carte
 - Rivelazione visiva delle carte corrette
 - Blocco delle carte già trovate (opacità ridotta)
+
+
 
 **Tecnologie e strumenti utilizzati**
 - **Linguaggio:** Kotlin

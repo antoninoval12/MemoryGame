@@ -2,9 +2,12 @@ package com.antonino.memorygame
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 
 private const val TAG = "MainActivity"
 
@@ -18,17 +21,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val images = mutableListOf(
-            R.drawable.ic_heart,
-            R.drawable.ic_light,
-            R.drawable.ic_plane,
-            R.drawable.ic_smiley
+            R.drawable.baseline_bolt_24,
+            R.drawable.baseline_beach_access_24,
+            R.drawable.baseline_attach_money_24,
+            R.drawable.baseline_diamond_24
         )
 
         // Aggiungi le immagini una seconda volta per creare le coppie
         images.addAll(images)
-        images.shuffle()
+        images.shuffle() // Mescola le immagini
 
-        // Inizializza i pulsanti (verifica che questi ID esistano nel layout!)
+        // Inizializza i pulsanti (assicurati che questi ID esistano nel layout XML)
         buttons = listOf(
             findViewById(R.id.imageButton1),
             findViewById(R.id.imageButton2),
@@ -40,9 +43,8 @@ class MainActivity : AppCompatActivity() {
             findViewById(R.id.imageButton8)
         )
 
-        // Assegna listener e immagini ai pulsanti
-        buttons.forEachIndexed { index, button ->
-            button.setOnClickListener {
+        buttons.forEachIndexed{ index, button ->
+            button.setOnClickListener{
                 Log.i(TAG, "button clicked!!")
                 button.setImageResource(images[index])
             }

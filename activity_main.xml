@@ -17,20 +17,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         android:layout_margin="16dp"
-        app:srcCompat="@drawable/baseline_flight_24"
-        android:contentDescription="Pulsante 1" />
+        app:srcCompat="@drawable/baseline_fingerprint_24"
+        android:contentDescription="@string/pulsante1" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_margin="16dp"
-        android:contentDescription="Pulsante 2"
+        android:contentDescription="@string/pulsante2"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton1"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_flight_24" />
+        app:srcCompat="@drawable/baseline_fingerprint_24" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -41,19 +41,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
         android:layout_margin="16dp"
-        app:srcCompat="@drawable/baseline_flight_24"
-        android:contentDescription="Pulsante 3" />
+        app:srcCompat="@drawable/baseline_fingerprint_24"
+        android:contentDescription="@string/pulsante3" />
+
+    <!-- Riga 3 -->
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_margin="16dp"
-        android:contentDescription="Pulsante 4"
+        android:contentDescription="@string/pulsante4"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@drawable/baseline_flight_24" />
+        app:srcCompat="@drawable/baseline_fingerprint_24" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -64,20 +66,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton6"
         android:layout_margin="16dp"
-        app:srcCompat="@drawable/baseline_flight_24"
-        android:contentDescription="Pulsante 5" />
+        app:srcCompat="@drawable/baseline_fingerprint_24"
+        android:contentDescription="@string/pulsante5" />
 
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_margin="16dp"
-        android:contentDescription="Pulsante 6"
+        android:contentDescription="@string/pulsante6"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton5"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:srcCompat="@drawable/baseline_flight_24" />
+        app:srcCompat="@drawable/baseline_fingerprint_24" />
+
+    <!-- Riga 4 -->
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="120dp"
@@ -87,19 +91,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton8"
         android:layout_margin="16dp"
-        app:srcCompat="@drawable/baseline_flight_24"
-        android:contentDescription="Pulsante 7" />
+        app:srcCompat="@drawable/baseline_fingerprint_24"
+        android:contentDescription="@string/pulsante7" />
 
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_margin="16dp"
-        android:contentDescription="Pulsante 8"
+        android:contentDescription="@string/pulsante8"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton7"
         app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-        app:srcCompat="@drawable/baseline_flight_24" />
+        app:srcCompat="@drawable/baseline_fingerprint_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

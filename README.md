@@ -33,7 +33,7 @@ Il progetto consiste nello sviluppo di un'app Android per un semplice gioco di m
 This project consists of developing a simple memory game Android app. The goal of the game is to find all pairs of matching cards. The graphical interface displays 8 cards arranged in a 2x4 grid. When the user taps a card, it flips to reveal an icon. If the two flipped cards match, they remain visible; otherwise, they flip back.
 
 **Developers**
-* Malinconico Daniel – 0334000218
+* Malinconico Daniel 0334000218
 * Valese Antonino – 0334000210
 * Pollastro Emanuele – 0334000213
 

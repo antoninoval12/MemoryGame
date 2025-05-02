@@ -1,4 +1,6 @@
 package com.antonino.memorygame
+
+//Importiamo le classi necessarie per l'attività Android.
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
@@ -6,8 +8,10 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
+//Costante per identificare i messaggi di log relativi a questa attività.
 private const val TAG = "MainActivity"
 
+//Classe principale, è la prima attività che viene eseguita all'avvio.
 class MainActivity : AppCompatActivity() {
 
     private lateinit var buttons: List<ImageButton>

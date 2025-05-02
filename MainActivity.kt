@@ -14,14 +14,16 @@ private const val TAG = "MainActivity"
 //Classe principale, è la prima attività che viene eseguita all'avvio.
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var buttons: List<ImageButton>
+    //Lista di pulsanti immagine presenti nell'interfaccia utente
+    private lateinit var buttons: List<ImageButton>    
     private lateinit var cards: List<MemoryCard>
     private var indexOfSingleSelectedCard: Int? = null
 
+    //Metodo chiamato automaticamente quando l'attività viene creata
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)    // Collega il file XML di layout a questa attività
 
         val images = listOf(
             R.drawable.baseline_bolt_24,

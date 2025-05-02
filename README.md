@@ -24,3 +24,30 @@ Il progetto consiste nello sviluppo di un'app Android per un semplice gioco di m
 - **Versione SDK:** API 35
 - **Controllo di versione:** Git + GitHub
 - **Versionamento del layout:** XML
+
+
+
+
+# Memory Game – Android Project
+
+This project consists of developing a simple memory game Android app. The goal of the game is to find all pairs of matching cards. The graphical interface displays 8 cards arranged in a 2x4 grid. When the user taps a card, it flips to reveal an icon. If the two flipped cards match, they remain visible; otherwise, they flip back.
+
+**Developers**
+* Malinconico Daniel – 0334000218
+* Valese Antonino – 0334000210
+* Pollastro Emanuele – 0334000213
+
+**Main Features**
+* Display of 8 cards (4 pairs) in a grid
+* Card state management: hidden, revealed, matched
+* Automatic match verification between two cards
+* Visual indication of correct pairs
+* Locking of matched cards with reduced opacity
+
+**Technologies and Tools Used**
+* **Language:** Kotlin
+* **IDE:** Android Studio
+* **SDK Version:** API 35
+* **Version Control:** Git + GitHub
+* **Layout:** XML
+

@@ -7,9 +7,9 @@ Il progetto consiste nello sviluppo di un'app Android per un semplice gioco di m
 
 ## Sviluppatori
 
-- **Daniel Malinconico**
-- **Antonino Valese**
-- **Emanuele Pollastro**
+- **Malinconico Daniel**
+- **Valese Antonino**
+- **Pollastro Emanuele**
 
 
 ## Funzionalità principali

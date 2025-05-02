@@ -1,7 +1,9 @@
 package com.antonino.memorygame
+
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -10,24 +12,23 @@ private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
 
     private lateinit var buttons: List<ImageButton>
+    private lateinit var cards: List<MemoryCard>
+    private var indexOfSingleSelectedCard: Int? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val images = mutableListOf(
+        val images = listOf(
             R.drawable.baseline_bolt_24,
             R.drawable.baseline_beach_access_24,
             R.drawable.baseline_attach_money_24,
             R.drawable.baseline_diamond_24
         )
+        val randomizedImages = (images + images).shuffled()
+        cards = randomizedImages.map { MemoryCard(it) }
 
-        // Aggiungi le immagini una seconda volta per creare le coppie
-        images.addAll(images)
-        images.shuffle() // Mescola le immagini
-
-        // Inizializza i pulsanti (assicurati che questi ID esistano nel layout XML)
         buttons = listOf(
             findViewById(R.id.imageButton1),
             findViewById(R.id.imageButton2),
@@ -39,11 +40,60 @@ class MainActivity : AppCompatActivity() {
             findViewById(R.id.imageButton8)
         )
 
-        buttons.forEachIndexed{ index, button ->
-            button.setOnClickListener{
-                Log.i(TAG, "button clicked!!")
-                button.setImageResource(images[index])
+        buttons.forEachIndexed { index, button ->
+            button.setOnClickListener {
+                Log.i(TAG, "button clicked at $index")
+                updateModels(index)
+                updateViews()
             }
+        }
+    }
+
+    private fun updateViews() {
+        cards.forEachIndexed { index, card ->
+            val button = buttons[index]
+            if (card.isMatched) {
+                button.alpha = 0.1f
+            }
+            button.setImageResource(
+                if (card.isFaceUp) card.identifier
+                else R.drawable.ic_code // immagine di default (retro)
+            )
+        }
+    }
+
+    private fun updateModels(position: Int) {
+        val card = cards[position]
+
+        if (card.isFaceUp) {
+            Toast.makeText(this, "Invalid move!", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        if (indexOfSingleSelectedCard == null) {
+            restoreCards()
+            indexOfSingleSelectedCard = position
+        } else {
+            checkForMatch(indexOfSingleSelectedCard!!, position)
+            indexOfSingleSelectedCard = null
+        }
+
+        card.isFaceUp = !card.isFaceUp
+    }
+
+    private fun restoreCards() {
+        for (card in cards) {
+            if (!card.isMatched) {
+                card.isFaceUp = false
+            }
+        }
+    }
+
+    private fun checkForMatch(position1: Int, position2: Int) {
+        if (cards[position1].identifier == cards[position2].identifier) {
+            Toast.makeText(this, "Match found!!", Toast.LENGTH_SHORT).show()
+            cards[position1].isMatched = true
+            cards[position2].isMatched = true
         }
     }
 }

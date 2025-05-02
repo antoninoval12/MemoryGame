@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MemoryGame</string>
+    <string name="pulsante1">Pulsante1</string>
+    <string name="pulsante2">Pulsante2</string>
+    <string name="pulsante3">Pulsante3</string>
+    <string name="pulsante4">Pulsante4</string>
+    <string name="pulsante5">Pulsante5</string>
+    <string name="pulsante6">Pulsante6</string>
+    <string name="pulsante7">Pulsante7</string>
+    <string name="pulsante8">Pulsante8</string>
+</resources>

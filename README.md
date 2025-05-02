@@ -35,7 +35,7 @@ This project consists of developing a simple memory game Android app. The goal o
 **Developers**
 * Malinconico Daniel 0334000218
 * Valese Antonino 0334000210
-* Pollastro Emanuele – 0334000213
+* Pollastro Emanuele 0334000213
 
 **Main Features**
 * Display of 8 cards (4 pairs) in a grid

@@ -1,29 +1,26 @@
 package com.antonino.memorygame
 
-//Importiamo le classi necessarie per l'attività Android.
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
-//Costante per identificare i messaggi di log relativi a questa attività.
 private const val TAG = "MainActivity"
 
-//Classe principale, è la prima attività che viene eseguita all'avvio.
 class MainActivity : AppCompatActivity() {
-
-    //Lista di pulsanti immagine presenti nell'interfaccia utente
-    private lateinit var buttons: List<ImageButton>    
+    private lateinit var buttons: List<ImageButton>
     private lateinit var cards: List<MemoryCard>
     private var indexOfSingleSelectedCard: Int? = null
 
-    //Metodo chiamato automaticamente quando l'attività viene creata
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Thread.sleep(3000)
+        installSplashScreen()
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)    // Collega il file XML di layout a questa attività
+        setContentView(R.layout.activity_main)
 
         val images = listOf(
             R.drawable.baseline_bolt_24,

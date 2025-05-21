@@ -1,5 +1,6 @@
 package com.antonino.memorygame
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
@@ -96,6 +97,16 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Coppia Trovata", Toast.LENGTH_SHORT).show()
             cards[position1].isMatched = true
             cards[position2].isMatched = true
+
+            if (haveWonGame()) {
+                val intent = Intent(this, WinActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }
+    }
+
+    private fun haveWonGame(): Boolean {
+        return cards.all { it.isMatched }
     }
 }

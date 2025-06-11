@@ -3,5 +3,4 @@
     <style name="Theme.MemoryGame" parent="Base.Theme.MemoryGame" />
     <style name="Theme.App.MemoryGame" parent="Theme.MemoryGame">
         <item name="windowSplashScreenBackground">@color/black</item
-        <item name="postSplashScreenTheme">@style/Base.Theme.MemoryGame</item>
 </resources>

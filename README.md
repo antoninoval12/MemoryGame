@@ -21,7 +21,7 @@ Il progetto consiste nello sviluppo di un'app Android per un semplice gioco di m
 **Tecnologie e strumenti utilizzati**
 - **Linguaggio:** Kotlin
 - **IDE:** Android Studio
-- **Versione SDK:** API 35
+- **Versione SDK:** API 31
 - **Controllo di versione:** Git + GitHub
 - **Versionamento del layout:** XML
 
@@ -47,7 +47,7 @@ This project consists of developing a simple memory game Android app. The goal o
 **Technologies and Tools Used**
 * **Language:** Kotlin
 * **IDE:** Android Studio
-* **SDK Version:** API 35
+* **SDK Version:** API 31
 * **Version Control:** Git + GitHub
 * **Layout:** XML
 

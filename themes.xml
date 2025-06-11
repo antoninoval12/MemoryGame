@@ -1,5 +1,4 @@
 
     
     <style name="Theme.MemoryGame" parent="Base.Theme.MemoryGame" />
-    <style name="Theme.App.MemoryGame" parent="Theme.MemoryGame">
-    
+
